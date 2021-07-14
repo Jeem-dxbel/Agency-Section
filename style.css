@@ -1,0 +1,88 @@
+/* Reset */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* body */
+body {
+  margin: 0;
+  font-family: tahoma, sans-serif;
+  background: #f0f0f0;
+  color: #282828;
+}
+/* elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+/* Agency */
+.agency {
+  margin: 1.875rem;
+}
+.agency h2 {
+  width: 172px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.875rem;
+}
+.agency h2 + p {
+  width: 360px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3.75rem;
+}
+.agencybox {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+.agencybox__items {
+  width: 200px;
+}
+.agencybox__icon {
+  border: 2px solid #ccc;
+  padding: 1.5rem;
+}
+/* .agencybox i {
+  position: absolute;
+  font-size: 3.125rem;
+  color: blueviolet;
+  top: 212px;
+} */
+.agency a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: blueviolet;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.1875rem;
+  text-align: center;
+}
+.agency .middle {
+  text-align: center;
+}
+@media screen and (min-width: 900px) {
+  .agencybox {
+    width: 900px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .agencybox {
+    flex-wrap: wrap;
+  }
+  .agencybox__items {
+    width: 300px;
+  }
+}
